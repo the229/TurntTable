@@ -25,5 +25,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "guest": {
+    "dataSource": "db",
+    "public": true
+  },
+  "event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "bac": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,32 @@
+{
+  "name": "event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "guests": {
+      "type": "hasMany",
+      "model": "guest",
+      "foreignKey": "",
+      "through": "bac"
+    },
+    "bacs": {
+      "type": "hasMany",
+      "model": "bac",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

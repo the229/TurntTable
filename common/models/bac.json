@@ -1,0 +1,32 @@
+{
+  "name": "bac",
+  "plural": "bacs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "value": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    },
+    "guest": {
+      "type": "belongsTo",
+      "model": "guest",
+      "foreignKey": ""
+    },
+    "event": {
+      "type": "belongsTo",
+      "model": "event",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
